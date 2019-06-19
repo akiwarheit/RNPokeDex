@@ -16,14 +16,14 @@ export default StyleSheet.create({
     alignContent: "center",
     justifyContent: "center"
   },
-  column: { flexDirection: "column" },
+  column: { flex: 1, flexDirection: "column" },
   image: { height: 90, width: 90 },
   type: {
+    width: "38%",
+    flexDirection: "row",
     marginBottom: 3,
-    width: "40%",
     padding: 2,
     justifyContent: "center",
-    alignItems: "center",
     borderRadius: 8,
     backgroundColor: "rgba(0, 0, 0, 0.1)"
   },

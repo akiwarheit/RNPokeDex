@@ -11,7 +11,12 @@ interface State {}
 
 export default class PokemonList extends Component<Props, State> {
   renderPokemon = ({ item }: { item: PokeDexListItem }) => (
-    <PokemonItem pokemon={item} onPress={() => {}} style={{ minWidth: 165 }} />
+    <PokemonItem
+      pokemon={item}
+      onPress={() => {}}
+      style={{ minWidth: 165 }}
+      touchableStyle={{ padding: 5 }}
+    />
   );
 
   render() {

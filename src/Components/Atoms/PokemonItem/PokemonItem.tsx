@@ -17,6 +17,7 @@ interface Props {
   pokemon: PokeDexListItem;
   onPress(): void;
   style?: StyleProp<ViewStyle>;
+  touchableStyle?: StyleProp<ViewStyle>;
 }
 
 export default function PokemonItem(props: Props) {
@@ -24,20 +25,14 @@ export default function PokemonItem(props: Props) {
     .charAt(0)
     .toUpperCase()}${props.pokemon.types[0].substring(1)}`;
 
-  const BackgroundColour = Colours[titleType];
+  const backgroundColor = Colours[titleType];
 
   return (
     <TouchableOpacity
       onPress={props.onPress}
-      style={[{ padding: 5 }, BaseStyles.shadow]}
+      style={[props.touchableStyle, BaseStyles.shadow]}
     >
-      <View
-        style={[
-          Styles.container,
-          props.style,
-          { backgroundColor: BackgroundColour }
-        ]}
-      >
+      <View style={[Styles.container, props.style, { backgroundColor }]}>
         <View style={Styles.column}>
           <Text
             style={[

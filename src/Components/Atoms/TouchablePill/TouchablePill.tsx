@@ -15,7 +15,15 @@ import { BaseStyles } from "../BaseStyles";
 interface Props {
   text: string;
   onPress(): void;
-  type: "grass" | "fire" | "water" | "electric" | "dark" | "ground";
+  type:
+    | "grass"
+    | "fire"
+    | "water"
+    | "electric"
+    | "dark"
+    | "ground"
+    | "steel"
+    | "dragon";
   style?: StyleProp<ViewStyle>;
 }
 
@@ -27,10 +35,7 @@ export default function TouchablePill(props: Props) {
   const Colour = Colours[titleType];
 
   return (
-    <TouchableOpacity
-      onPress={props.onPress}
-      style={[{ padding: 5 }, BaseStyles.shadow]}
-    >
+    <TouchableOpacity onPress={props.onPress} style={BaseStyles.shadow}>
       <View
         style={[
           Styles.container,

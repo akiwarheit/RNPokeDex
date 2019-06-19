@@ -29,47 +29,35 @@ const DATA = require("../../Fixtures/ViewObjects/PokedexListItems.json").sort(
 storiesOf("Atoms", module).add(
   "TouchablePill - How to properly use them",
   () => (
-    <View
-      style={{
-        flex: 1,
-        flexDirection: "column",
-        width: "100%",
-        padding: 15,
-        marginVertical: 40
-      }}
-    >
+    <View style={{ flex: 2, flexDirection: "row", marginTop: 40 }}>
       <View
         style={{
-          flexDirection: "row",
-          width: "100%",
-          justifyContent: "space-evenly"
+          flex: 1,
+          flexDirection: "column",
+          margin: 5
         }}
       >
-        <TouchablePill type="grass" text="Send" onPress={() => {}} />
-        <TouchablePill type="dark" text="Nudes" onPress={() => {}} />
-      </View>
-      <View
-        style={{
-          flexDirection: "row",
-          width: "100%",
-          justifyContent: "space-evenly"
-        }}
-      >
-        <TouchablePill type="electric" text="Send" onPress={() => {}} />
-        <TouchablePill type="water" text="Nudes" onPress={() => {}} />
-      </View>
-      <View
-        style={{
-          flexDirection: "row",
-          width: "100%",
-          justifyContent: "space-evenly"
-        }}
-      >
+        <TouchablePill type="water" text="Send" onPress={() => {}} />
         <TouchablePill
-          type="ground"
-          text="Send Nudes"
+          type="grass"
+          text="Nudes"
           onPress={() => {}}
-          style={{ minWidth: "100%" }}
+          style={{ marginTop: 5 }}
+        />
+      </View>
+      <View
+        style={{
+          flex: 1,
+          flexDirection: "column",
+          margin: 5
+        }}
+      >
+        <TouchablePill type="fire" text="Send" onPress={() => {}} />
+        <TouchablePill
+          type="steel"
+          text="Nudes"
+          onPress={() => {}}
+          style={{ marginTop: 5 }}
         />
       </View>
     </View>
