@@ -1,39 +1,68 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  StyleProp,
+  ViewStyle,
+  TouchableOpacity
+} from "react-native";
 import { PokeDexListItem } from "../../../Domains/Pokemon/types";
+import Styles from "./PokemonItem.styles";
+import { BaseStyles } from "../BaseStyles";
+import { Images, Colours } from "../../../../assets";
+import { material } from "react-native-typography";
 
 interface Props {
   pokemon: PokeDexListItem;
+  onPress(): void;
+  style?: StyleProp<ViewStyle>;
 }
 
 export default function PokemonItem(props: Props) {
+  const titleType = `${props.pokemon.types[0]
+    .charAt(0)
+    .toUpperCase()}${props.pokemon.types[0].substring(1)}`;
+
+  const BackgroundColour = Colours[titleType];
+
   return (
-    <View
-      style={{
-        flexDirection: "column",
-        borderRadius: 8,
-        backgroundColor: "#46D0A7",
-        padding: 15
-      }}
+    <TouchableOpacity
+      onPress={props.onPress}
+      style={[{ padding: 5 }, BaseStyles.shadow]}
     >
       <View
-        style={{
-          flexDirection: "row",
-          alignContent: "center",
-          justifyContent: "center"
-        }}
+        style={[
+          Styles.container,
+          props.style,
+          { backgroundColor: BackgroundColour }
+        ]}
       >
-        <View style={{ flexDirection: "column" }}>
-          <Text>{props.pokemon.id}</Text>
-          {props.pokemon.types.map(type => (
-            <Text>{type}</Text>
+        <View style={Styles.column}>
+          <Text
+            style={[
+              material.buttonWhiteObject,
+              Styles.name,
+              { marginBottom: 3 }
+            ]}
+          >
+            {props.pokemon.name}
+          </Text>
+          {props.pokemon.types.map((type: string, index: number) => (
+            <View style={Styles.type} key={`${index}_${type}`}>
+              <Text style={[material.body1White, Styles.typeText]}>{type}</Text>
+            </View>
           ))}
         </View>
-        <Image
-          source={{ uri: props.pokemon.sprite }}
-          style={{ height: 50, width: 50, alignSelf: "flex-end" }}
-        />
+        <View style={{ position: "absolute", bottom: -10, right: -10 }}>
+          <Image source={Images.Subtract} style={[Styles.lowerRightPokeball]} />
+          <Image
+            source={{ uri: props.pokemon.sprite }}
+            style={Styles.image}
+            resizeMode="stretch"
+          />
+        </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }

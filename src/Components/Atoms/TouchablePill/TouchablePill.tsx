@@ -15,7 +15,7 @@ import { BaseStyles } from "../BaseStyles";
 interface Props {
   text: string;
   onPress(): void;
-  type: "leaf" | "fire" | "water" | "electric" | "dark" | "ground";
+  type: "grass" | "fire" | "water" | "electric" | "dark" | "ground";
   style?: StyleProp<ViewStyle>;
 }
 
@@ -40,8 +40,8 @@ export default function TouchablePill(props: Props) {
           props.style
         ]}
       >
-        <Image source={Images.Subtract} style={Styles.upperLeftPokeball} />
-        <Image source={Images.Subtract} style={Styles.lowerRightPokeball} />
+        <Image source={Images.Subtract} style={[Styles.upperLeftPokeball]} />
+        <Image source={Images.Subtract} style={[Styles.lowerRightPokeball]} />
         <Text style={[material.buttonWhiteObject, Styles.text]}>
           {props.text}
         </Text>

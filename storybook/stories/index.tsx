@@ -12,7 +12,7 @@ const style = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#F5FCFF",
-    marginTop: 150
+    marginTop: 40
   }
 });
 
@@ -41,6 +41,69 @@ const DATA = [
     sprite:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
     types: ["grass", "poison"]
+  },
+  {
+    id: 4,
+    name: "Charmander",
+    sprite:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+    types: ["fire"]
+  },
+  {
+    id: 5,
+    name: "Charmeleon",
+    sprite:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+    types: ["fire"]
+  },
+  {
+    id: 6,
+    name: "Charizard",
+    sprite:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+    types: ["fire"]
+  },
+  {
+    id: 107,
+    name: "Hitmonchan",
+    sprite:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
+    types: ["fighting"]
+  },
+  {
+    id: 150,
+    name: "Mewtwo",
+    sprite:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+    types: ["psychic"]
+  },
+  {
+    id: 35,
+    name: "Clefairy",
+    sprite:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
+    types: ["fairy"]
+  },
+  {
+    id: 25,
+    name: "Pikachu",
+    sprite:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+    types: ["electric"]
+  },
+  {
+    id: 93,
+    name: "Haunter",
+    sprite:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+    types: ["ghost"]
+  },
+  {
+    id: 304,
+    name: "Aron",
+    sprite:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/304.png",
+    types: ["steel", "ground"]
   }
 ];
 
@@ -63,7 +126,7 @@ storiesOf("Atoms", module).add(
           justifyContent: "space-evenly"
         }}
       >
-        <TouchablePill type="leaf" text="Send" onPress={() => {}} />
+        <TouchablePill type="grass" text="Send" onPress={() => {}} />
         <TouchablePill type="dark" text="Nudes" onPress={() => {}} />
       </View>
       <View
@@ -95,9 +158,15 @@ storiesOf("Atoms", module).add(
 );
 
 storiesOf("Atoms", module).add("PokemonItem", () => (
-  <CenteredView>
-    <PokemonItem pokemon={DATA[0]} />
-  </CenteredView>
+  <View style={{ marginTop: 100 }}>
+    {DATA.map(pokemon => (
+      <PokemonItem
+        pokemon={pokemon}
+        style={{ width: 150 }}
+        onPress={() => {}}
+      />
+    ))}
+  </View>
 ));
 
 storiesOf("Molecules", module).add("PokemonList", () => (

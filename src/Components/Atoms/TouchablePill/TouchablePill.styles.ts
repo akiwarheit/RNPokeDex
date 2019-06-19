@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { Colours } from "../../../../assets";
 
 export default StyleSheet.create({
   container: {
@@ -25,14 +26,22 @@ export default StyleSheet.create({
     width: 90,
     position: "absolute",
     top: -50,
-    left: -65
+    left: -65,
+    tintColor: Colours.White,
+    opacity: 0.1
   },
   lowerRightPokeball: {
     height: 90,
     width: 90,
     position: "absolute",
     right: -30,
-    bottom: -45
+    bottom: -45,
+    tintColor: Colours.White,
+    opacity: 0.1
   },
-  text: { fontSize: 19, width: "100%", textAlignVertical: "center" }
+  text: {
+    fontSize: 19,
+    width: "100%",
+    textAlignVertical: "center"
+  }
 });

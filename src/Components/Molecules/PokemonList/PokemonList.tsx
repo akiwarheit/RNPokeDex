@@ -11,20 +11,19 @@ interface State {}
 
 export default class PokemonList extends Component<Props, State> {
   renderPokemon = ({ item }: { item: PokeDexListItem }) => (
-    <PokemonItem pokemon={item} />
+    <PokemonItem pokemon={item} onPress={() => {}} style={{ minWidth: 165 }} />
   );
 
   render() {
     return (
       <FlatList
-        contentContainerStyle={{
-          flex: 1,
-          width: "100%"
-        }}
-        style={{ flex: 1, width: "100%" }}
         data={this.props.pokemons}
         renderItem={this.renderPokemon}
         numColumns={2}
+        columnWrapperStyle={{
+          alignContent: "space-between",
+          alignItems: "center"
+        }}
         keyExtractor={(item: PokeDexListItem, index: number) =>
           `${item.id}_${index}`
         }
