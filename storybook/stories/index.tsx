@@ -5,6 +5,7 @@ import { View, StyleSheet } from "react-native";
 import PokemonList from "../../src/Components/Molecules/PokemonList/PokemonList";
 import PokemonItem from "../../src/Components/Atoms/PokemonItem/PokemonItem";
 import TouchablePill from "../../src/Components/Atoms/TouchablePill/TouchablePill";
+import { PokeDexListItem } from "../../src/Domains/Pokemon/types";
 
 const style = StyleSheet.create({
   container: {
@@ -12,7 +13,8 @@ const style = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#F5FCFF",
-    marginTop: 40
+    marginTop: 40,
+    marginBottom: 40
   }
 });
 
@@ -20,92 +22,9 @@ const CenteredView = ({ children }) => (
   <View style={style.container}>{children}</View>
 );
 
-const DATA = [
-  {
-    id: 1,
-    name: "Bulbasaur",
-    sprite:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-    types: ["grass"]
-  },
-  {
-    id: 2,
-    name: "Ivysaur",
-    sprite:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
-    types: ["grass", "poison"]
-  },
-  {
-    id: 3,
-    name: "Venasaur",
-    sprite:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
-    types: ["grass", "poison"]
-  },
-  {
-    id: 4,
-    name: "Charmander",
-    sprite:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
-    types: ["fire"]
-  },
-  {
-    id: 5,
-    name: "Charmeleon",
-    sprite:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
-    types: ["fire"]
-  },
-  {
-    id: 6,
-    name: "Charizard",
-    sprite:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
-    types: ["fire"]
-  },
-  {
-    id: 107,
-    name: "Hitmonchan",
-    sprite:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
-    types: ["fighting"]
-  },
-  {
-    id: 150,
-    name: "Mewtwo",
-    sprite:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
-    types: ["psychic"]
-  },
-  {
-    id: 35,
-    name: "Clefairy",
-    sprite:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
-    types: ["fairy"]
-  },
-  {
-    id: 25,
-    name: "Pikachu",
-    sprite:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
-    types: ["electric"]
-  },
-  {
-    id: 93,
-    name: "Haunter",
-    sprite:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
-    types: ["ghost"]
-  },
-  {
-    id: 304,
-    name: "Aron",
-    sprite:
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/304.png",
-    types: ["steel", "ground"]
-  }
-];
+const DATA = require("../../Fixtures/ViewObjects/PokedexListItems.json").sort(
+  (p1: PokeDexListItem, p2: PokeDexListItem) => p1.id > p2.id
+);
 
 storiesOf("Atoms", module).add(
   "TouchablePill - How to properly use them",

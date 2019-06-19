@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Bulbasaur",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+    "types": ["grass"]
+  },
+  {
+    "id": 2,
+    "name": "Ivysaur",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+    "types": ["grass", "poison"]
+  },
+  {
+    "id": 3,
+    "name": "Venasaur",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+    "types": ["grass", "poison"]
+  },
+  {
+    "id": 4,
+    "name": "Charmander",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+    "types": ["fire"]
+  },
+  {
+    "id": 5,
+    "name": "Charmeleon",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+    "types": ["fire"]
+  },
+  {
+    "id": 6,
+    "name": "Charizard",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+    "types": ["fire"]
+  },
+  {
+    "id": 7,
+    "name": "Squirtle",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+    "types": ["water"]
+  },
+  {
+    "id": 8,
+    "name": "Wartortle",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+    "types": ["water"]
+  },
+  {
+    "id": 9,
+    "name": "Blastoise",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+    "types": ["water"]
+  },
+  {
+    "id": 107,
+    "name": "Hitmonchan",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
+    "types": ["fighting"]
+  },
+  {
+    "id": 150,
+    "name": "Mewtwo",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+    "types": ["psychic"]
+  },
+  {
+    "id": 35,
+    "name": "Clefairy",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
+    "types": ["fairy"]
+  },
+  {
+    "id": 25,
+    "name": "Pikachu",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+    "types": ["electric"]
+  },
+  {
+    "id": 93,
+    "name": "Haunter",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+    "types": ["ghost"]
+  },
+  {
+    "id": 304,
+    "name": "Aron",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/304.png",
+    "types": ["steel", "ground"]
+  },
+  {
+    "id": 143,
+    "name": "Snorlax",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
+    "types": ["normal"]
+  },
+  {
+    "id": 361,
+    "name": "Snorunt",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/361.png",
+    "types": ["ice"]
+  },
+  {
+    "id": 383,
+    "name": "Groudon",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/383.png",
+    "types": ["ground"]
+  },
+  {
+    "id": 95,
+    "name": "Onix",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
+    "types": ["rock"]
+  },
+  {
+    "id": 714,
+    "name": "Noibat",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/714.png",
+    "types": ["flying"]
+  },
+  {
+    "id": 317,
+    "name": "Swalot",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/317.png",
+    "types": ["poison"]
+  },
+  {
+    "id": 123,
+    "name": "Scyther",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
+    "types": ["bug", "flying"]
+  }
+]

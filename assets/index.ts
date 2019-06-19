@@ -17,6 +17,11 @@ export const Colours = {
   Fighting: "#D67873",
   Fairy: "#F4BDC9",
   Ghost: "#A292BC",
+  Normal: "#C6C6A7",
+  Ice: "#BCE6E6",
+  Rock: "#D1C17D",
+  Flying: "#C6B7F5",
+  Dragon: "#A27DFA",
 
   // MISC.
   PokeballTint: "#303943",
