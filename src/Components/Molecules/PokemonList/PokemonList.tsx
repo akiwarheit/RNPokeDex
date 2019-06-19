@@ -19,6 +19,7 @@ export default class PokemonList extends Component<Props, State> {
       <FlatList
         data={this.props.pokemons}
         renderItem={this.renderPokemon}
+        showsVerticalScrollIndicator={false}
         numColumns={2}
         columnWrapperStyle={{
           alignContent: "space-between",
