@@ -8,12 +8,17 @@ export default StyleSheet.create({
     overflow: "hidden",
     height: 60,
     minWidth: 160,
-    justifyContent: "center",
+    justifyContent: "center"
+  },
+  shadow: {
     shadowColor: "#000",
-    shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.8,
-    shadowRadius: 8,
-    elevation: 5
+    shadowOffset: {
+      width: 0,
+      height: 2
+    },
+    shadowOpacity: 0.23,
+    shadowRadius: 2.62,
+    elevation: 4
   },
   upperLeftPokeball: {
     height: 90,

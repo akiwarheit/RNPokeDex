@@ -10,6 +10,7 @@ import {
 import { Images, Colours } from "../../../../assets";
 import { material } from "react-native-typography";
 import Styles from "./TouchablePill.styles";
+import { BaseStyles } from "../BaseStyles";
 
 interface Props {
   text: string;
@@ -26,7 +27,10 @@ export default function TouchablePill(props: Props) {
   const Colour = Colours[titleType];
 
   return (
-    <TouchableOpacity onPress={props.onPress} style={{ padding: 5 }}>
+    <TouchableOpacity
+      onPress={props.onPress}
+      style={[{ padding: 5 }, BaseStyles.shadow]}
+    >
       <View
         style={[
           Styles.container,
