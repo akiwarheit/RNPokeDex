@@ -78,13 +78,13 @@ storiesOf("Atoms", module).add(
 
 storiesOf("Atoms", module).add("PokemonItem", () => (
   <View style={{ marginTop: 100 }}>
-    {DATA.map(pokemon => (
-      <PokemonItem
-        pokemon={pokemon}
-        style={{ width: 150 }}
-        onPress={() => {}}
-      />
-    ))}
+    <PokemonItem pokemon={DATA[0]} style={{ width: 300 }} onPress={() => {}} />
+    <PokemonItem
+      pokemon={DATA[3]}
+      style={{ width: "100%" }}
+      onPress={() => {}}
+    />
+    <PokemonItem pokemon={DATA[6]} style={{ width: 150 }} onPress={() => {}} />
   </View>
 ));
 

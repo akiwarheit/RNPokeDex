@@ -130,5 +130,11 @@
     "name": "Scyther",
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
     "types": ["bug", "flying"]
+  },
+  {
+    "id": 321,
+    "name": "Wailord",
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/321.png",
+    "types": ["water"]
   }
 ]
