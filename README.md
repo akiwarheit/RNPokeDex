@@ -30,6 +30,14 @@ src
 
 We are using https://pokeapi.co/ to retrieve all the Pokemon data needed
 
+# Design
+
+_WIP_
+
+Made by saepulnahwan23@gmail.com
+
+https://dribbble.com/shots/6545819-Pokedex-App
+
 # License
 
 ```
