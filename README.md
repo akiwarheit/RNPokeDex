@@ -30,9 +30,14 @@ src
 
 We are using https://pokeapi.co/ to retrieve all the Pokemon data needed
 
-# Design
+# Design (Storybook)
 
 _WIP_
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/akiwarheit/RNPokeDex/master/ss1.png" width="280" height="600" title="Storybook 1">
+  <img src="https://raw.githubusercontent.com/akiwarheit/RNPokeDex/master/ss2.png" width="280" height="600" title="Storybook 2">
+</p>
 
 Made by saepulnahwan23@gmail.com
 
