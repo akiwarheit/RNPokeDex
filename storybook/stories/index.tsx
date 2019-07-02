@@ -29,35 +29,45 @@ const DATA = require("../../Fixtures/ViewObjects/PokedexListItems.json").sort(
 storiesOf("Atoms", module).add(
   "TouchablePill - How to properly use them",
   () => (
-    <View style={{ flex: 2, flexDirection: "row", marginTop: 40 }}>
-      <View
-        style={{
-          flex: 1,
-          flexDirection: "column",
-          margin: 5
-        }}
-      >
-        <TouchablePill type="water" text="Send" onPress={() => {}} />
-        <TouchablePill
-          type="grass"
-          text="Nudes"
-          onPress={() => {}}
-          style={{ marginTop: 5 }}
-        />
+    <View style={{ flex: 1, flexShrink: 1 }}>
+      <View style={{ flex: 2, flexDirection: "row", marginTop: 40 }}>
+        <View
+          style={{
+            flex: 1,
+            flexDirection: "column",
+            margin: 5
+          }}
+        >
+          <TouchablePill type="water" text="Send" onPress={() => {}} />
+          <TouchablePill
+            type="grass"
+            text="Memes"
+            onPress={() => {}}
+            style={{ marginTop: 5 }}
+          />
+        </View>
+        <View
+          style={{
+            flex: 1,
+            flexDirection: "column",
+            margin: 5
+          }}
+        >
+          <TouchablePill type="fire" text="Send" onPress={() => {}} />
+          <TouchablePill
+            type="steel"
+            text="Memes"
+            onPress={() => {}}
+            style={{ marginTop: 5 }}
+          />
+        </View>
       </View>
-      <View
-        style={{
-          flex: 1,
-          flexDirection: "column",
-          margin: 5
-        }}
-      >
-        <TouchablePill type="fire" text="Send" onPress={() => {}} />
+      <View style={{ flex: 1, flexDirection: "column" }}>
         <TouchablePill
-          type="steel"
-          text="Nudes"
+          type="dark"
+          text=" Send Memes"
           onPress={() => {}}
-          style={{ marginTop: 5 }}
+          style={{ margin: 5 }}
         />
       </View>
     </View>
