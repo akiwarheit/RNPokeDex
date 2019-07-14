@@ -2,7 +2,7 @@
 
 A PokeDex app built using React Native & Typescript.
 
-The purpose of this small exercise is to setup a project using commonly used libraries. At some point this will become a framework (?).
+The purpose of this small exercise is to setup a project using commonly used libraries. At some point this will become a framework (extracting the `Components` to a separate repo/library).
 
 The tech stack:
 
