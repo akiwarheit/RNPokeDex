@@ -18,15 +18,6 @@ export default StyleSheet.create({
   },
   column: { flex: 1, flexDirection: "column" },
   image: { height: 90, width: 90 },
-  type: {
-    width: "38%",
-    flexDirection: "row",
-    marginBottom: 3,
-    padding: 2,
-    justifyContent: "center",
-    borderRadius: 8,
-    backgroundColor: "rgba(0, 0, 0, 0.1)"
-  },
   lowerRightPokeball: {
     height: 90,
     width: 90,
@@ -37,10 +28,6 @@ export default StyleSheet.create({
   name: {
     fontSize: 19,
     width: "100%",
-    textAlignVertical: "center"
-  },
-  typeText: {
-    fontSize: 13,
     textAlignVertical: "center"
   }
 });

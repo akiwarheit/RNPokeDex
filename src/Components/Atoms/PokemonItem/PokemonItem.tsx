@@ -12,6 +12,7 @@ import Styles from "./PokemonItem.styles";
 import { BaseStyles } from "../BaseStyles";
 import { Images, Colours } from "../../../../assets";
 import { material } from "react-native-typography";
+import Type from "../Type/Type";
 
 interface Props {
   pokemon: PokeDexListItem;
@@ -44,9 +45,7 @@ export default function PokemonItem(props: Props) {
             {props.pokemon.name}
           </Text>
           {props.pokemon.types.map((type: string, index: number) => (
-            <View style={Styles.type} key={`${index}_${type}`}>
-              <Text style={[material.body1White, Styles.typeText]}>{type}</Text>
-            </View>
+            <Type type={type} index={index} />
           ))}
         </View>
         <View style={{ position: "absolute", bottom: -10, right: -10 }}>
