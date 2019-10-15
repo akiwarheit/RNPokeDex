@@ -1,3 +1,5 @@
+export interface PokemonState {}
+
 export interface PokeDexListItem {
   id: number; // pokedex number
   name: string;

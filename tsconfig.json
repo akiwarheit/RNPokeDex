@@ -5,12 +5,18 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "noImplicitAny": false,
+    "baseUrl": ".",
     "jsx": "react",
     "lib": ["es6"],
     "moduleResolution": "node",
     "noEmit": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "paths": {
+      "@domains/*": ["src/Domains/*"],
+      "@components/*": ["src/Components/*"],
+      "@views/*": ["src/Views/*"]
+    }
   },
   "exclude": [
     "node_modules",
