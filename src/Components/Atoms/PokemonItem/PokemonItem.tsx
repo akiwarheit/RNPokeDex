@@ -7,10 +7,10 @@ import {
   ViewStyle,
   TouchableOpacity
 } from "react-native";
-import { PokeDexListItem } from "../../../Domains/Pokemon/types";
+import { PokeDexListItem } from "@domains/Pokemon/types";
 import Styles from "./PokemonItem.styles";
 import { BaseStyles } from "../BaseStyles";
-import { Images, Colours } from "../../../../assets";
+import { Images, Colours } from "@assets/index";
 import { material } from "react-native-typography";
 import Type from "../Type/Type";
 

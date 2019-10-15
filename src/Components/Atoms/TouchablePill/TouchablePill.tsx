@@ -7,7 +7,7 @@ import {
   StyleProp,
   ViewStyle
 } from "react-native";
-import { Images, Colours } from "../../../../assets";
+import { Images, Colours } from "@assets/index";
 import { material } from "react-native-typography";
 import Styles from "./TouchablePill.styles";
 import { BaseStyles } from "../BaseStyles";

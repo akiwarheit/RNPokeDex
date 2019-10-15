@@ -2,10 +2,10 @@ import React from "react";
 import { storiesOf } from "@storybook/react-native";
 
 import { View, StyleSheet } from "react-native";
-import PokemonList from "../../src/Components/Molecules/PokemonList/PokemonList";
-import PokemonItem from "../../src/Components/Atoms/PokemonItem/PokemonItem";
-import TouchablePill from "../../src/Components/Atoms/TouchablePill/TouchablePill";
-import { PokeDexListItem } from "../../src/Domains/Pokemon/types";
+import PokemonList from "@components/Molecules/PokemonList/PokemonList";
+import PokemonItem from "@components//Atoms/PokemonItem/PokemonItem";
+import TouchablePill from "@components/Atoms/TouchablePill/TouchablePill";
+import { PokeDexListItem } from "@domains/Pokemon/types";
 
 const style = StyleSheet.create({
   container: {
